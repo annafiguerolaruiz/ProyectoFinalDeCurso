@@ -9,6 +9,13 @@ public class JumpBall : MonoBehaviour
     public float BallImpulse = 8f;
 
     private bool IgnoreNextCollision;
+    private Vector3 startPosition;
+
+    //Save initial position of the ball
+    private void Start()
+    {
+        startPosition = transform.position;
+    }
 
     //When our ball collides with something...
     private void OnCollisionEnter(Collision collision)
@@ -19,6 +26,14 @@ public class JumpBall : MonoBehaviour
         if (IgnoreNextCollision)
         {
             return;
+        }
+
+        //Let's check if the platform the player crashed on has the script "DeatPart"
+        DeatPart deathPart = collision.transform.GetComponent<DeatPart>();
+        //If the player collides with a platform with the script "DeatPart" the level will restart from 0.
+        if (deathPart)
+        {
+            GameManager.GM.RestartLevel();
         }
 
         //We specify that when we collide with something, we add a point
@@ -37,5 +52,11 @@ public class JumpBall : MonoBehaviour
     private void UpcomingCollision ()
     {
         IgnoreNextCollision = false;
+    }
+
+    //Our current position is the same as the beginning
+    public void ResetBall()
+    {
+        transform.position = startPosition;
     }
 }

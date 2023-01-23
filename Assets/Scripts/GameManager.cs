@@ -31,7 +31,11 @@ public class GameManager : MonoBehaviour
     }
     public void RestartLevel()
     {
+        //We reset score
+        GM.CurrentScore = 0;
 
+        //We find our "JumpController" script
+        FindObjectOfType<JumpBall>().ResetBall();
     }
     public void AddScore(int scoretoAdd)
     {
