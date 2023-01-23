@@ -22,7 +22,7 @@ public class JumpBall : MonoBehaviour
         }
 
         //We specify that when we collide with something, we add a point
-        GameManager.GM.AddScore(1);
+        //GameManager.GM.AddScore(1);
 
         Rb.velocity = Vector3.zero;
         Rb.AddForce(Vector3.up*BallImpulse, ForceMode.Impulse);
