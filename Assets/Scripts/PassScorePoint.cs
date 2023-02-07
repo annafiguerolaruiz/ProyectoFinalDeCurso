@@ -8,6 +8,8 @@ public class PassScorePoint : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         GameManager.GM.AddScore(1);
+        //We add 1 point when the ball breaks the platforms
+        FindObjectOfType<JumpBall>().perfectPass++;
     }
 
 

@@ -13,13 +13,14 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         //We are going to eliminate the remaining game managers so that only one remains on the scene
-        if (GM==null)
+        if (GM == null)
         {
             GM = this;
+            DontDestroyOnLoad(GM);
         }
-        else if (GM!=this)
+        else
         {
-            Destroy(gameObject);
+            Destroy(this);
         }
         //Our best score will be the variable that we have saved below
         BestScore = PlayerPrefs.GetInt("HighScore");
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
     }
     public void NextLevel()
     {
-
+        
     }
     public void RestartLevel()
     {
@@ -45,6 +46,8 @@ public class GameManager : MonoBehaviour
             BestScore = CurrentScore;
             //We keep best score of the game:
             PlayerPrefs.SetInt("HighScore", CurrentScore);
+            PlayerPrefs.SetInt("Current_Level", CurrentLevel);
+
         }
     }
 

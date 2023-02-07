@@ -426,12 +426,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 127130555}
         m_TargetAssemblyTypeName: MainMneu, Assembly-CSharp
-        m_MethodName: SceneLevel3
-        m_Mode: 1
+        m_MethodName: SceneLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -513,6 +513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 127130556}
   - component: {fileID: 127130555}
+  - component: {fileID: 127130557}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -546,6 +547,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &127130557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127130554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34103009a7899a646a70c724e3bc7121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BestScore: 0
+  CurrentScore: 0
+  CurrentLevel: 0
 --- !u!1 &263817616
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,12 +840,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 127130555}
         m_TargetAssemblyTypeName: MainMneu, Assembly-CSharp
-        m_MethodName: SceneLevel4
-        m_Mode: 1
+        m_MethodName: SceneLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -956,12 +972,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 127130555}
         m_TargetAssemblyTypeName: MainMneu, Assembly-CSharp
-        m_MethodName: SceneLevel1
-        m_Mode: 1
+        m_MethodName: SceneLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1539,12 +1555,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 127130555}
         m_TargetAssemblyTypeName: MainMneu, Assembly-CSharp
-        m_MethodName: SceneLevel5
-        m_Mode: 1
+        m_MethodName: SceneLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2658,12 +2674,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 127130555}
         m_TargetAssemblyTypeName: MainMneu, Assembly-CSharp
-        m_MethodName: SceneLevel2
-        m_Mode: 1
+        m_MethodName: SceneLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
