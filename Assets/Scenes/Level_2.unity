@@ -502,13 +502,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195297282}
-  m_LocalRotation: {x: 0.20876937, y: -0, z: -0, w: 0.9779649}
+  m_LocalRotation: {x: 0, y: -0.20876522, z: 0.97796583, w: 0}
   m_LocalPosition: {x: 0, y: 3.027, z: -10.472}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 24.1, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 24.1, y: 0, z: 180}
 --- !u!114 &1195297286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2349,6 +2349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rb: {fileID: 8167175186617265571}
   BallImpulse: 8
+  SuperSpeed: 30
   perfectPass: 0
 --- !u!4 &8167175186617265575
 Transform:

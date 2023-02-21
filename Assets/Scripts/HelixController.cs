@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HelixController : MonoBehaviour
 {
+    internal float distance;
     private Vector2 LastTouchPosition;
     private Vector3 StartPosition;
 

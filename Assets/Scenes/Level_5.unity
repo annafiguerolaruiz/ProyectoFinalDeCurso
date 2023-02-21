@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 788878958}
   - component: {fileID: 788878957}
   - component: {fileID: 788878960}
+  - component: {fileID: 788878961}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -365,7 +366,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788878956}
-  m_LocalRotation: {x: 0.17000975, y: -0, z: -0, w: 0.9854424}
+  m_LocalRotation: {x: 0.17001165, y: 0, z: 0, w: 0.98544204}
   m_LocalPosition: {x: 0, y: 2.67, z: -10.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -385,6 +386,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ball: {fileID: 6736308001322985490}
+--- !u!114 &788878961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788878956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a527cbd2d9e5240a52cfc84b05bc4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zRotation: 180
 --- !u!1 &2028733766
 GameObject:
   m_ObjectHideFlags: 0
@@ -34371,6 +34385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rb: {fileID: 6736308001322985495}
   BallImpulse: 8
+  SuperSpeed: 30
+  perfectPass: 3
 --- !u!4 &6736308001322985491
 Transform:
   m_ObjectHideFlags: 0
@@ -34380,7 +34396,7 @@ Transform:
   m_GameObject: {fileID: 6736308001322985480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.49, z: -2.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.64107, y: 0.64107, z: 0.64107}
   m_Children:
   - {fileID: 695939502}
   m_Father: {fileID: 0}

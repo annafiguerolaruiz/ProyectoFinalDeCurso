@@ -7,11 +7,12 @@ public class JumpBall : MonoBehaviour
 
     public Rigidbody Rb;
     public float BallImpulse = 8f;
+    public float SuperSpeed = 8;
 
     private bool IgnoreNextCollision;
     private Vector3 startPosition;
     public int perfectPass;
-    private float superSpeed = 13;
+   
     private bool superSpeedActive;
     private int perfectPassCount = 3;
     private DeatPart script;
@@ -81,6 +82,7 @@ public class JumpBall : MonoBehaviour
         if (perfectPass>=perfectPassCount && !superSpeedActive)
         {
             superSpeedActive = true;
+            Rb.AddForce(Vector3.down * SuperSpeed, ForceMode.Impulse);
         }
     }
 
