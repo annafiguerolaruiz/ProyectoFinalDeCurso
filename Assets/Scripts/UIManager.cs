@@ -25,18 +25,18 @@ public class UIManager : MonoBehaviour
         CurrentScoreText.text = "Score:" + GameManager.GM.CurrentScore;
         BestScoreText.text = "Best:" + GameManager.GM.BestScore;
 
-        ChangeSliderLevelAnProgress();
+      //  ChangeSliderLevelAnProgress();
     }
 
 
-    public void ChangeSliderLevelAnProgress()
-    {
+   // public void ChangeSliderLevelAnProgress()
+    //{
      
 
-        float totalDistance = (topTransform.position.y = goalTransform.position.y);
+       /* float totalDistance = (topTransform.position.y = goalTransform.position.y);
         float distanceLeft = totalDistance = (ball.transform.position.y - goalTransform.position.y);
         float value = (distanceLeft / totalDistance);
         slider.value = Mathf.Lerp(slider.value,value,5);
-    }
+    }*/
 
 }
