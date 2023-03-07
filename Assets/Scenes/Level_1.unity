@@ -5488,6 +5488,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360593128}
   m_Mesh: {fileID: -6150326042995890324, guid: 18660545c7d842e4c819707d9098ecef, type: 3}
+--- !u!1 &361892756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 361892758}
+  - component: {fileID: 361892757}
+  m_Layer: 0
+  m_Name: PostProcesado
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &361892757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361892756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 6a583c6c6b7417f49b535c7d723e1594, type: 2}
+--- !u!4 &361892758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361892756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 795.9426, y: 514.6251, z: 156.31976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &363075897
 GameObject:
   m_ObjectHideFlags: 0
@@ -27419,7 +27467,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 108c25ac94c629c4790be5fcdc2b94d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34395,6 +34443,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentScoreText: {fileID: 1561330672}
   BestScoreText: {fileID: 3294291}
+  slider: {fileID: 0}
+  ActualLevel: {fileID: 0}
+  NextLevel: {fileID: 0}
+  topTransform: {fileID: 0}
+  goalTransform: {fileID: 0}
+  ball: {fileID: 0}
 --- !u!1 &2105314418
 GameObject:
   m_ObjectHideFlags: 0

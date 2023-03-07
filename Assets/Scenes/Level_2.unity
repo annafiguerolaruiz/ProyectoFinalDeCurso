@@ -2974,6 +2974,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentScoreText: {fileID: 6604998888972268850}
   BestScoreText: {fileID: 6604998890366759569}
+  slider: {fileID: 0}
+  ActualLevel: {fileID: 0}
+  NextLevel: {fileID: 0}
+  topTransform: {fileID: 0}
+  goalTransform: {fileID: 0}
+  ball: {fileID: 0}
 --- !u!1 &6604998888972268844
 GameObject:
   m_ObjectHideFlags: 0
@@ -5870,7 +5876,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 108c25ac94c629c4790be5fcdc2b94d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
