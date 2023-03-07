@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -50,5 +51,19 @@ public class GameManager : MonoBehaviour
 
         }
     }
+    public void RestartGame()
+    {
+        CurrentScore = 0;
+        SceneManager.LoadScene("Level_1");
+    }
 
+    public void Update()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "MainMenu")
+        {
+            CurrentScore = 0;
+        }
+    }
+        
 }

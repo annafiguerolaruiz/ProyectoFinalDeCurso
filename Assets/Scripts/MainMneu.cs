@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMneu : MonoBehaviour
 {
+   
+    public static bool musicCreated;
 
     public GameObject Settings;
     //Change scenes
@@ -28,18 +30,21 @@ public class MainMneu : MonoBehaviour
     }
     public void Menu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
 
     private void Start()
     {
         Settings.SetActive(false);
+        musicCreated = true;
     }
     public void SettingsButton()
     {
         if (Settings.activeInHierarchy == false) { Settings.SetActive(true); } else { Settings.SetActive(false); }
         
     }
+   
 
 
 }
