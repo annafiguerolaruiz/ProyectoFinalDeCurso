@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Meta
   - MusicMenu
+  - WIN
   layers:
   - Default
   - TransparentFX

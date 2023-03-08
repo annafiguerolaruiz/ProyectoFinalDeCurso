@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMneu : MonoBehaviour
 {
-   
+    public AudioSource AS;
     public static bool musicCreated;
 
     public GameObject Settings;
@@ -44,7 +44,12 @@ public class MainMneu : MonoBehaviour
         if (Settings.activeInHierarchy == false) { Settings.SetActive(true); } else { Settings.SetActive(false); }
         
     }
-   
+    public void SettingsButtonLevel()
+    {
+        if (Settings.activeInHierarchy == false) { Settings.SetActive(true); Time.timeScale = 0; AS.Pause(); } else { Settings.SetActive(false); Time.timeScale = 1; AS.Play(); }
+
+    }
+
 
 
 }

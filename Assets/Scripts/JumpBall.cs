@@ -111,6 +111,10 @@ public class JumpBall : MonoBehaviour
 
             SceneManager.LoadScene(GameManager.GM.CurrentLevel);
         }
+        if (other.CompareTag("WIN"))
+        {
+            SceneManager.LoadScene("WIN");
+        }
 
     }
 }
